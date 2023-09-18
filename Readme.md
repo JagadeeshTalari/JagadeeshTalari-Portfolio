@@ -3,7 +3,7 @@
 ![Jagadeesh_Talari](./images/icon.png)
 
 
-[My Portfolio Link](https://jagadeeshtalariportfolio.netlify.app/)
+[My Portfolio Link](https://jagadeeshtalari.github.io/JagadeeshTalari-Portfolio/)
 
 </center>
 
