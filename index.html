@@ -1,72 +1,152 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="emerald">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9de1acd69f.js" crossorigin="anonymous"></script>
-    
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9de1acd69f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              daisyui: {
-                styled: true,
-                themes: true,
-                base: true,
-                utils: true,
-                logs: true,
-                rtl: false,
-                prefix: "",
-                darkTheme: "dark",
-            },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
             },
             daisyui: {
-                    themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
+              styled: true,
+              themes: true,
+              base: true,
+              utils: true,
+              logs: true,
+              rtl: false,
+              prefix: "",
+              darkTheme: "dark",
             },
-          }
-        }
-      </script>
-    <link rel="shortcut icon" href="favicon.ico" type="./images/profile.JPG">
-    <link rel="stylesheet" href="./style.css">
+          },
+          daisyui: {
+            themes: [
+              "light",
+              "dark",
+              "cupcake",
+              "bumblebee",
+              "emerald",
+              "corporate",
+              "synthwave",
+              "retro",
+              "cyberpunk",
+              "valentine",
+              "halloween",
+              "garden",
+              "forest",
+              "aqua",
+              "lofi",
+              "pastel",
+              "fantasy",
+              "wireframe",
+              "black",
+              "luxury",
+              "dracula",
+              "cmyk",
+              "autumn",
+              "business",
+              "acid",
+              "lemonade",
+              "night",
+              "coffee",
+              "winter",
+            ],
+          },
+        },
+      };
+    </script>
+    <link rel="shortcut icon" href="favicon.ico" type="./images/profile.JPG" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Jagadeesh Portfolio</title>
-</head>
+  </head>
 
-<body class="container overflow-x-hidden bg-gray-900  w-screen h-full">
-    
+  <body class="container-fluid overflow-x-hidden bg-gray-900 w-screen h-full">
     <!-- navbar -->
-    <div class="navbar bg-warning ">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-            </label>
-            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Homepage</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>About</a></li>
-            </ul>
+    <div class="navbar bg-warning">
+      <!-- <div class="d-flex w-[95vw] container-fluid justify-center"> -->
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Homepage</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-ghost normal-case text-xl">Jagadeesh Talari</a>
+      </div>
+      <div class="navbar-end">
+        <button class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </button>
+        <button class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+              />
+            </svg>
+            <span class="badge badge-xs badge-primary indicator-item"></span>
           </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost normal-case text-xl">Jagadeesh Talari</a>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
-        </div>
+        </button>
+      </div>
+      <!-- </div> -->
     </div>
 
     <!-- <div class="h-32 w-screen mx-auto text-center my-auto py-12 text-white">
@@ -74,513 +154,779 @@
     </div> -->
 
     <!-- content -->
-    <div class="container mt-20 content">
+    <div class="container-lg mt-20 content">
+      <!-- Header Section -->
+      <section class="w-[65vw] mx-auto text-gray-400 bg-gray-900 body-font">
+        <div
+          class="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center"
+        >
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+            >
+              <span class="pl-2 text-2xl"> I am </span>
+              <br class="hidden lg:inline-block" />Jagadeesh Talari
+            </h1>
+            <p class="mb-8 leading-relaxed">
+              UI Developer | Frontend Developer
+            </p>
+          </div>
+          <div class="lg:max-w-sm max-h-sm lg:w-full md:w-1/2 w-5/6">
+            <img
+              class="object-cover object-center rounded-full"
+              alt="hero"
+              src="./images/DSCF1440.JPG"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- Header Section -->
-        <section class="w-[65vw] mx-auto text-gray-400 bg-gray-900 body-font">
-            <div class="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center">
-              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> <span class="pl-2 text-2xl"> I am  </span>
-                  <br class="hidden lg:inline-block">Jagadeesh Talari
-                </h1>
-                <p class="mb-8 leading-relaxed">UI Developer | Frontend Developer </p>
-                
-              </div>
-              <div class="lg:max-w-sm max-h-sm lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded-full" alt="hero" src="./images/DSCF1440.JPG">
-              </div>
-            </div>
-        </section>
+      <div class="h-px mt-24 mb-12 bg-gray-100/20 w-screen"></div>
 
-        <div class="h-px mt-24 mb-12 bg-gray-100/20 w-screen"></div>
+      <!-- Projects -->
 
-        <!-- Projects -->
+      <!-- Project Heading-->
+      <div
+        class="w-[88vw] mx-auto text-stone-300 hover:text-pink-300 text-4xl font-bold"
+      >
+        My Projects
+      </div>
 
-        <!-- Project Heading-->
-        <div class="w-[88vw]  mx-auto text-stone-300 hover:text-pink-300 text-4xl font-bold">My Projects</div>
+      <section
+        class="w-[90vw] mx-auto py-16 grid grid-cols-1 gap-12 md:grid-cols-3"
+      >
+        <!-- card1 Project-18 Shopify-clone -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-400 hover:delay-100 shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img src="./images/shopifyImg2.png" alt="ShopifyClone" />
+          </figure>
 
-        <section class="w-[90vw] mx-auto py-16 grid grid-cols-1 gap-12
-        md:grid-cols-3">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Shopify Clone</h2>
 
-          
-          
-          <!-- card1 Project-18 Shopify-clone -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-400 hover:delay-100 shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/shopifyImg2.png" alt="ShopifyClone" /></figure>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-success font-semibold"
+                >Tailwind CSS</span
+              >
+            </p>
 
-            <div class="card-body gap-y-5">
-
-              <h2 class="card-title">Shopify Clone</h2>
-
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-success font-semibold">Tailwind CSS</span></p>
-
-              
-              
-              <div class="card-actions justify-end">
-                <a href="https://jagadeeshproject18.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/ShopifyClone" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i> Github</a>
-              </div>
-
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/ShopifyClone/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/ShopifyClone"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
           </div>
+        </div>
 
-          <!-- card2 Project-17 Paytm-clone -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/paytmImg.png" alt="paytmImg" /></figure>
+        <!-- card2 Project-17 Paytm-clone -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 shadow-lg shadow-slate-600"
+        >
+          <figure><img src="./images/paytmImg.png" alt="paytmImg" /></figure>
 
-            <div class="card-body gap-y-5">
-            
-              <h2 class="card-title">Paytm Clone</h2>
-            
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-success font-semibold">Tailwind CSS</span></p>
-            
-              <div class="card-actions justify-end">
-                <a href="https://jagadeeshproject17.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/Paytm_Clone" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i> Github</a>
-              </div>
-            
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Paytm Clone</h2>
+
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-success font-semibold"
+                >Tailwind CSS</span
+              >
+            </p>
+
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/Paytm_Clone/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/Paytm_Clone"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
           </div>
-          
-          <!-- card3 Project-16 Rode-clone-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            <figure><img src="./images/RodeImg.png" alt="Rode_Clone" /></figure>
-            <div class="card-body gap-y-5">
-              <h2 class="card-title">Rode Clone</h2>
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-success font-semibold">Tailwind CSS</span></p>
-              <div class="card-actions justify-end">
-                <a href="https://jagadeeshproject16.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/Rode_Clone" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i> Github</a>
-              </div>
+        </div>
+
+        <!-- card3 Project-16 Rode-clone-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure><img src="./images/RodeImg.png" alt="Rode_Clone" /></figure>
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Rode Clone</h2>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-success font-semibold"
+                >Tailwind CSS</span
+              >
+            </p>
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/Rode_Clone/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/Rode_Clone"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
           </div>
+        </div>
 
-          <!-- card4 Project-15 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/productDesignPage.png" alt="productDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card4 Project-15 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img src="./images/productDesignPage.png" alt="productDesignPage" />
+          </figure>
 
-              <h2 class="card-title">Product Design Landing Page</h2>
-                            
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Product Design Landing Page</h2>
 
-                <a href="https://jagadeeshproject15.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/Product_Design_Landing_Page" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/Product_Design_Landing_Page/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/Product_Design_Landing_Page"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
-          
-          <!-- card5 Project-14 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/dancingHomePage.png" alt="dancingHomePage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        </div>
 
-              <h2 class="card-title">Dancing Home Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+        <!-- card5 Project-14 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img src="./images/dancingHomePage.png" alt="dancingHomePage" />
+          </figure>
 
-                <a href="https://jagadeeshproject14.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/Product_Design_Landing_Page" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Dancing Home Page</h2>
 
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
+
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/DancingHomePage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/DancingHomePage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
-          
-          <!-- card6 Project-13 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/saasLandingPage.png" alt="saasLandingPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        </div>
 
-              <h2 class="card-title">SAAS Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+        <!-- card6 Project-13 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img src="./images/saasLandingPage.png" alt="saasLandingPage" />
+          </figure>
 
-                <a href="https://jagadeeshproject13.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/SAAS-Landing-Page" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">SAAS Landing Page</h2>
 
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
+
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/SAAS-Landing-Page/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/SAAS-Landing-Page"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
-          
-          <!-- card7 Project-12 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/business_Landing_Page.png" alt="business_Landing_Page" /></figure>
-            
-            <div class="card-body gap-y-5">
+        </div>
 
-              <h2 class="card-title">Business Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+        <!-- card7 Project-12 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/business_Landing_Page.png"
+              alt="business_Landing_Page"
+            />
+          </figure>
 
-                <a href="https://jagadeeshproject12.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/Business_Landing_Page" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Business Landing Page</h2>
 
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
+
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/Business_Landing_Page/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/Business_Landing_Page"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card8 Project-11 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/hostingLandingPage.png" alt="hostingLandingPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card8 Project-11 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/hostingLandingPage.png"
+              alt="hostingLandingPage"
+            />
+          </figure>
 
-              <h2 class="card-title">Hosting Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Hosting Landing Page</h2>
 
-                <a href="https://jagadeeshproject11.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/Hosting-Landing-Page" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/Hosting-Landing-Page/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/Hosting-Landing-Page"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card9 Project-10 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/interiorDesignPage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card9 Project-10 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/interiorDesignPage.png"
+              alt="interiorDesignPage"
+            />
+          </figure>
 
-              <h2 class="card-title">Interior Design Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Interior Design Landing Page</h2>
 
-                <a href="https://jagadeeshproject10.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/InteriorDesignLandingPage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/InteriorDesignLandingPage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/InteriorDesignLandingPage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-           <!-- card10 Project-9 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/developerLandingPage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card10 Project-9 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/developerLandingPage.png"
+              alt="interiorDesignPage"
+            />
+          </figure>
 
-              <h2 class="card-title">Developer Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Developer Landing Page</h2>
 
-                <a href="https://jagadeeshproject9.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/DeveloperLandingPage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/DeveloperLandingPage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/DeveloperLandingPage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card11 Project-8 -->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/webDesignLandingPage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card11 Project-8 -->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/webDesignLandingPage.png"
+              alt="interiorDesignPage"
+            />
+          </figure>
 
-              <h2 class="card-title">WebDesign Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">WebDesign Landing Page</h2>
 
-                <a href="https://jagadeeshproject8.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/WebDesignLandingPage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/WebDesignLandingPage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/WebDesignLandingPage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card12 Project-7-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/productHomePage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card12 Project-7-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img src="./images/productHomePage.png" alt="interiorDesignPage" />
+          </figure>
 
-              <h2 class="card-title">Product Home Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is totally <span class="text font-bold">responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Product Home Page</h2>
 
-                <a href="https://jagadeeshproject7.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/ProducHomePage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is totally
+              <span class="text font-bold">responsive</span> and it is designed
+              using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/ProducHomePage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/ProducHomePage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card13 Project-6-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/PlantHomePage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card13 Project-6-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img src="./images/PlantHomePage.png" alt="interiorDesignPage" />
+          </figure>
 
-              <h2 class="card-title">Plant Home Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is <span class="text font-bold">not responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Plant Home Page</h2>
 
-                <a href="https://jagadeeshproject6.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/PlantHomePage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is
+              <span class="text font-bold">not responsive</span> and it is
+              designed using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/PlantHomePage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/PlantHomePage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card14 Project-5-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/CryptoLandingpage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card14 Project-5-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/CryptoLandingpage.png"
+              alt="interiorDesignPage"
+            />
+          </figure>
 
-              <h2 class="card-title">Crypto Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is <span class="text font-bold">not responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Crypto Landing Page</h2>
 
-                <a href="https://jagadeeshproject5.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/CryptoLandingPage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is
+              <span class="text font-bold">not responsive</span> and it is
+              designed using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/CryptoLandingPage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/CryptoLandingPage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card15 Project-4-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/digitalMarketingHomepage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card15 Project-4-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/digitalMarketingHomepage.png"
+              alt="interiorDesignPage"
+            />
+          </figure>
 
-              <h2 class="card-title">Digital Marketing Home Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is <span class="text font-bold">not responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Digital Marketing Home Page</h2>
 
-                <a href="https://jagadeeshproject4.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/DigitalMarketingHomePage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is
+              <span class="text font-bold">not responsive</span> and it is
+              designed using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/DigitalMarketingHomePage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/DigitalMarketingHomePage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card16 Project-3-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/lawHomePage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card16 Project-3-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img src="./images/lawHomePage.png" alt="interiorDesignPage" />
+          </figure>
 
-              <h2 class="card-title">Law Home Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is <span class="text font-bold">not responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Law Home Page</h2>
 
-                <a href="https://jagadeeshproject3.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/LawHomePage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is
+              <span class="text font-bold">not responsive</span> and it is
+              designed using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/LawHomePage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/LawHomePage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card17 Project-2-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/foodRestaurantHomePage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card17 Project-2-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/foodRestaurantHomePage.png"
+              alt="interiorDesignPage"
+            />
+          </figure>
 
-              <h2 class="card-title">Food Restaurant Home Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is <span class="text font-bold">not responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Food Restaurant Home Page</h2>
 
-                <a href="https://jagadeeshproject2.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/FoodRestaurantHomePage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is
+              <span class="text font-bold">not responsive</span> and it is
+              designed using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/FoodRestaurantHomePage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/FoodRestaurantHomePage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
+        </div>
 
-          <!-- card18 Project-1-->
-          <div class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100  dropshadow shadow-lg shadow-slate-600">
-            
-            <figure><img src="./images/StreetStyleLandingPage.png" alt="interiorDesignPage" /></figure>
-            
-            <div class="card-body gap-y-5">
+        <!-- card18 Project-1-->
+        <div
+          class="card card-compact w-62 md:w-96 bg-base-300 dropshadow hover:bg-neutral-50 p-1 hover:scale-105 hover:transition hover:transition-all hover:duration-200 hover:delay-100 dropshadow shadow-lg shadow-slate-600"
+        >
+          <figure>
+            <img
+              src="./images/StreetStyleLandingPage.png"
+              alt="interiorDesignPage"
+            />
+          </figure>
 
-              <h2 class="card-title">Street Style Landing Page</h2>
-              
-              <p class="leading-7 mb-6">This Project is <span class="text font-bold">not responsive</span> and it is designed using <span class="badge badge-accent text-gray-100 font-semibold">HTML</span>,<span class="badge badge-info font-semibold">CSS</span></p>
-              
-              <div class="card-actions justify-end">
+          <div class="card-body gap-y-5">
+            <h2 class="card-title">Street Style Landing Page</h2>
 
-                <a href="https://jagadeeshproject1.netlify.app" target="_blank"
-                 class="btn p-1 px-3 text-black bg-warning hover:bg-error"><img class="w-6 mr-2" src="./images/netlify.svg" alt=""> 
-                 Deploy 
-                </a>
-                <a href="https://github.com/JagadeeshTalari/project1StreetStyleLandingPage" target="_blank"
-                class="btn p-1 px-3 text-black bg-warning hover:bg-error "><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
-                Github</a>
-              
-              </div>
+            <p class="leading-7 mb-6">
+              This Project is
+              <span class="text font-bold">not responsive</span> and it is
+              designed using
+              <span class="badge badge-accent text-gray-100 font-semibold"
+                >HTML</span
+              >,<span class="badge badge-info font-semibold">CSS</span>
+            </p>
 
+            <div class="card-actions justify-end">
+              <a
+                href="https://jagadeeshtalari.github.io/project1StreetStyleLandingPage/"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><img class="w-6 mr-2" src="./images/netlify.svg" alt="" />
+                Deploy
+              </a>
+              <a
+                href="https://github.com/JagadeeshTalari/project1StreetStyleLandingPage"
+                target="_blank"
+                class="btn p-1 px-3 text-black bg-warning hover:bg-error"
+                ><i class="text-2xl mr-2 text-black fa-brands fa-github"></i>
+                Github</a
+              >
             </div>
-
           </div>
-
-
-
-        </section>
-
+        </div>
+      </section>
     </div>
 
-    <script src="script.js">
-
-    </script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
